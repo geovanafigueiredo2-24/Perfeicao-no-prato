@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale conosco </title>
+    <link rel="icon" type="image/x-icon" href="./imagens/favicon-removebg-preview.png">
+</head>
+<style>
+      /* Estilos para o cabeçalho */
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* Estilos para o ícone de busca */
+#lupa {
+    height: auto;
+    width: 22px;
+    padding-left: 330px;
+    position: absolute;
+    padding-bottom: 5px;
+    top: 50%; /* Alinha verticalmente no centro */
+    transform: translateY(-50%); /* Ajusta a posição vertical */
+}
+
+/* Estilos para a barra de pesquisa */
+.barra-procura {
+    position: relative;
+}
+
+/* Estilos para o logotipo */
+#logo {
+    height: auto;
+    width: 70px;
+    padding-left: 100px;
+}
+
+/* Estilos para os ícones de redes sociais */
+#face {
+    height: auto;
+    width: 35px;
+    padding-bottom: 10px;
+}
+
+#whats {
+    height: auto;
+    width: 23px;
+    padding-bottom: 10px;
+
+}
+
+#insta {
+    height: auto;
+    width: 35px;
+    padding-bottom: 10px;
+}
+
+/* Estilos para o segundo logotipo */
+#logo2 {
+    height: auto;
+    width: 70px;
+    float: right;
+    padding-right: 100px;
+    margin: 0;
+}
+
+/* Estilos para a lista de navegação */
+ul {
+    display: block;
+    padding-right: 150px;
+}
+
+/* Estilos para os itens da lista de navegação */
+li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+    display: inline;
+}
+
+/* Estilos para a barra de pesquisa */
+#search {
+    margin-top: 10px;
+    padding: 13px;
+    padding-right: 150px;
+    height: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    border-color: gray;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: #fff;
+}
+
+/* Posicionamento do campo de busca */
+#busque {
+    position: relative;
+}
+
+/* Estilos para o texto de placeholder na barra de pesquisa */
+#search::placeholder {
+    color: white;
+}
+
+/* Estilos para o topo da página */
+.topo {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para as redes sociais */
+.redes-sociais {
+    float: left;
+    padding: 20px;
+    display: inline;
+}
+
+/* Estilos para os itens da barra de navegação */
+.navbar-items {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+/* Estilos para cada item da barra de navegação */
+.navbar-item {
+    margin-right: 20px;
+}
+
+/* Estilos para os links na barra de navegação */
+.navbar-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para os links na barra de navegação  */
+.navbar-item a:hover {
+    color: #ccc;
+}
+
+.selecion{
+    padding: 60px;
+}
+#carrinho{
+    height: auto;
+    width: 30px;
+
+}
+
+    form {
+        background-color: rgb(196, 193, 193);
+        margin: 0 auto;
+        width: 400px;
+        padding: 30px;
+        border: 1px solid #ccc7c7;
+        border-radius: 1em;
+    }
+    label {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ececec;
+        border-radius: 0.5em;
+    }
+    button {
+        border-radius: 10px;
+        background-color: #f6f8f3;
+        color: #020202;
+        border: none;
+        padding: 0.5em 1em;
+    }
+    .informaçoes {
+    float: right;
+    width: calc(100% - 120px); /* Ajuste conforme necessário */
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    position: absolute;
+}
+    .inta{
+       text-decoration: underline
+    }
+    
+    .whatss{
+        text-decoration: underline;
+    }
+
+    .fece{
+      text-decoration: underline;
+       }
+
+     .links:hover{
+        color:rgb(190, 28, 28)
+     }  
+
+     .links{
+        display: block;
+        color:rgb(34, 34, 34);
+     
+     }
+
+     h1{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        
+     }
+
+     .chapezinho img {
+        padding-top: 30px;
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        }
+
+        button{
+            display: block;
+        }
+
+.links:active{
+    color: #020202;
+}
+
+#img2{
+    width: 400px;
+    position: relative;
+    padding-left: 800px;
+    padding-top: 80px;
+    
+
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #000000;
+    padding: 20px;
+    bottom: 0;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+}
+</style>
+<body>
+    <header>
+        <div class="conteiner">
+    
+            <div class="topo">
+    
+                <a href="index.html"><img src="./imagens/logo-removebg-preview.png" id="logo"></a>
+               
+                <div class="barra-procura">
+                    <div id="busque">
+                <input type="search" id="search" name="search" placeholder="Busque o que procura...">
+                </div>
+    
+                <img src="imagens/imagens/lupa2.png" id="lupa">
+    
+            </div>
+    
+                <ul class="navbar-items">
+                    <li class="navbar-item"><a href="index.html">Menu</a></li>
+                    <li class="navbar-item"><a href="fale.html">Contato</a></li>
+                    <li class="navbar-item"><a href="sobre.html">Sobre</a></li>
+                    <li class="navbar-item"><a href="formulario.html">Sacola</a></li>
+                    <a href="formulario.html"><img src="imagens/carrinho.png" id="carrinho"></a>
+    
+                </ul>
+            </div>
+        
+    </header>
+<div class="chapezinho">
+    <img src="imagens/favicon-removebg-preview.png" alt="">
+
+</div>
+
+    <div class="formul">
+    <h1 class="formulario">Fale com a gente</h1>
+
+    <form>
+
+         <span>formulário de contato</span>
+        
+        <br>
+        <label for="name">Seu nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="telefone">Seu telefone:</label>
+        <input type="telefone" id="telefone" name="telefone" required>
+
+        <label for="message">Sua mensagem:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+         <br>
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+<div class="informaçoes">
+<h2>Nossas Redes Sociais:</h2>
+<div class="links">
+<a href="fale.html">intagram:@perfeiçãonoprato</a>
+<br>
+ <a href="fale.html">whatsapp: (84) 12345-6789</a>
+<br>
+<a href="fale.html"> fecebook: Perfeição_no_prato</a>
+</div>
+<br>
+
+<h2>Nosso endereço:</h2>
+<div class="links"></div>
+<a href="fale.html">Rua:morada da paz,144
+<br>Cep:59270-000
+<br>Bairro: centro</a>
+</div>
+<div class="img2">
+<img src="imagens/mapa.png" alt="" id="img2">
+
+</div>
+</div>
+
+<footer>
+
+    <div class="redes-sociais">
+       <a href="whatsapp.com"><img src="imagens/whatss.png" id="whats" /></a>
+
+        <a href="facebook.com"><img src="imagens/iconeface.png" id="face"/></a>
+
+        <a href="instagram.com"><img src="imagens/a.png" id="insta"/></a>
+    </div>
+
+    <a href="index.html"><img src="imagens/logo-removebg-preview.png" id="logo2"></a>
+
+        <p>© 2024 - copyright</p>
+    
+    </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfeição no Prato</title>
+    <link rel="stylesheet" href="styleindex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="icon" type="image/x-icon" href="./imagens/favicon-removebg-preview.png">
+</head>
+<body>
+
+<header>
+    <div class="conteiner">
+
+        <div class="topo">
+
+            <a href="index.html"><img src="imagens/logo-removebg-preview.png" id="logo"></a>
+           
+            <div class="barra-procura">
+                <div id="busque">
+            <input type="search" id="search" name="search" placeholder="Busque o que procura...">
+            </div>
+
+            <img src="imagens/lupa2.png" id="lupa">
+
+        </div>
+
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="index.html">Menu</a></li>
+                <li class="navbar-item"><a href="fale.html">Contato</a></li>
+                <li class="navbar-item"><a href="sobre.html">Sobre</a></li>
+                <li class="navbar-item"><a href="formulario.html">Sacola</a></li>
+                <a href="formulario.html"><img src="imagens/carrinho.png" id="carrinho"></a>
+
+            </ul>
+
+        </div>
+    
+    </div>
+</header>
+<nav>
+    <div class="texto-nav">
+
+        <h1>Estamos <br>abrindo <br>em breve!</h1>
+
+        <p>Guarde está data...</p>
+        <p>21.04.2024</p>
+
+        <a href="#menu"><input type="submit" value="Peça aqui" id="contato"></a>
+
+    </div>
+        <img src="imagens/Black White Simple Opening Banner.png" id="imgnav">
+</nav>
+
+    <section id="menu">
+        <h2 class="section-subtitle">Nossos pratos especiais</h2>
+
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="images/dish.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default" data-id="idDoProduto1" onclick="adicionarAoCarrinho(this.getAttribute('data-id'))">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <img src="images/dish2.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default" data-id="idDoProduto2" onclick="adicionarAoCarrinho(this.getAttribute('data-id'))">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="images/dish3.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default" data-id="idDoProduto3" onclick="adicionarAoCarrinho(this.getAttribute('data-id'))">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="images/dish4.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default" data-id="idDoProduto4" onclick="adicionarAoCarrinho(this.getAttribute('data-id'))">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="images/dish.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default" data-id="idDoProduto5" onclick="adicionarAoCarrinho(this.getAttribute('data-id'))">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="images/dish2.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default" data-id="idDoProduto6" onclick="adicionarAoCarrinho(this.getAttribute('data-id'))">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="images/dish3.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default" data-id="idDoProduto7" onclick="adicionarAoCarrinho(this.getAttribute('data-id'))">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="images/dish4.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Lorem Ipsum
+                </h3>
+
+                <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default" data-id="idDoProduto8" onclick="adicionarAoCarrinho(this.getAttribute('data-id'))">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+<footer>
+
+    <div class="redes-sociais">
+       <a href="whatsapp.com"><img src="imagens/whatss.png" id="whats" /></a>
+
+        <a href="facebook.com"><img src="imagens/iconeface.png" id="face"/></a>
+
+        <a href="instagram.com"><img src="imagens/a.png" id="insta"/></a>
+    </div>
+
+    <a href="index.html"><img src="imagens/logo-removebg-preview.png" id="logo2"></a>
+
+        <p>© 2024 - copyright</p>
+    
+    </footer>
+    </div>
+    <!--mensagem personalizada -->
+    <div id="mensagemCarrinho" class="mensagem-carrinho-escondida">
+    <p>Produto adicionado ao carrinho!</p>
+    </div>
+    <script>
+        // Esta função será chamada quando o botão for clicado
+        function adicionarAoCarrinho(idDoProduto) {
+    // Implementação da lógica de adição ao carrinho
+    var carrinho = localStorage.getItem('carrinho') ? JSON.parse(localStorage.getItem('carrinho')) : [];
+    carrinho.push({ id: idDoProduto, quantidade: 1 }); // Adiciona o produto com a quantidade
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    alert('Produto adicionado ao carrinho!');
+}
+    //mostrar a mensagem
+    function mostrarMensagemCarrinho() {
+    var mensagem = document.getElementById('mensagemCarrinho');
+    mensagem.classList.remove('mensagem-carrinho-escondida');
+    mensagem.classList.add('mensagem-carrinho-ativa');
+
+    // Esconder a mensagem após 3 segundos
+    setTimeout(function() {
+        mensagem.classList.remove('mensagem-carrinho-ativa');
+        mensagem.classList.add('mensagem-carrinho-escondida');
+    }, 3000);
+}
+        </script>
+</body>
+</html>
